@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "UnchartedApp": {
+            "applicationId": "3B2W6n5eNNtmhPLWoT6CIcXawweNAaOLKYsO7PJX", 
+            "masterKey": "vPGpG083c8b20zuMq4fUgMxhBc2JxqePphyKtWX3"
+        }, 
+        "_default": {
+            "link": "UnchartedApp"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.19"
+    }
+}

@@ -41,7 +41,7 @@ Parse.Cloud.job("rebuildLeaderboard", function(request, status) {
           q3.find({
             success: function(results) {
 
-              console.log(username + " count: " + results.length);
+              // console.log(username + " count: " + results.length);
               if (results.length == 0) {
 
                 // create new leaderboard
@@ -72,7 +72,7 @@ Parse.Cloud.job("rebuildLeaderboard", function(request, status) {
                 }, {
                   success: function(updatedLeaderboard) {
 
-                    console.log("updated leaderboard: " + savedLeaderboard.get("username") + ": " + savedLeaderboard.get("score"));
+                    console.log("updated leaderboard: " + username + ": " + updatedLeaderboard.get("score"));
 
                     promise.resolve();
                   },

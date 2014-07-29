@@ -34,7 +34,6 @@ Parse.Cloud.job("deleteUserAndVisitedLocations", function(request, status) {
 
       if (username != "joen" && 
         username != "joe") {
-      // if (username == "joe34") {
 
         var q2 = new Parse.Query(VisitedLocation);
         q2.equalTo("user", user);
@@ -90,7 +89,7 @@ Parse.Cloud.job("deleteUserAndVisitedLocations", function(request, status) {
 
         // delete User row
 
-        promises.push(user.destroy());
+        // promises.push(user.destroy());
 
       } else {
         promise.resolve();
